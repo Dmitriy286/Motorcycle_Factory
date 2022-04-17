@@ -1,9 +1,13 @@
 package com.company.BaseClass;
 
-public class Bike {
+public abstract class Bike {
+    String factoryName;
     private String type;
     private int speed;
-    private String factoryName;
+
+    public Bike (String factoryName) {
+        this.factoryName = factoryName;
+    }
 
     @Override
     public String toString() {
@@ -13,16 +17,6 @@ public class Bike {
                 + "Я произведен на фабрике " + this.factoryName + ".";
     }
 
-    public void setFactoryName(String factoryName) {
-        this.factoryName = factoryName;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
+//    public abstract void setFactoryName();
 
 }
