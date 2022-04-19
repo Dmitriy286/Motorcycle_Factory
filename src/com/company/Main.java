@@ -11,12 +11,5 @@ public class Main {
         Bike newBike = client.createBike();
         System.out.println(newBike);
 
-
-
-//        Bike newBike3 = new HondaCrossBikeCreator("Honda");
-//        System.out.println(newBike3);
-//        Bike newBike = client.createBike();
-//        System.out.println(newBike);
-
     }
 }
